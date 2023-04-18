@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hr_navbar</title>
+    <script src="https://kit.fontawesome.com/e3773d37bd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=shadow-multiple|emboss">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="csshr_navi.css">
+</head>
+<body id="first" >
+    <div class="body-cont">
+    <!-- page header  -->
+    <div class="header">                                      
+    </div>
+    <!-- page navbar  -->
+    <div class="nav">
+        <div class="l"> <img src="./hr_nav_image/imgbin_axiom-cyber-solutions-management-company-business-png.png" width="100px"></div>
+        <!-- <div class="logo"><button id="btn0" onclick="back()">back</button></div> -->
+        <ul>
+          <li><a id="btn1" onclick="home()">HOME</a></li>    
+          <li><a  onclick="about()">ABOUT</a></li>  
+          <li><a onclick="servic()">SERVICES</a></li>   
+          <li><a onclick="contact()">CONTACT-US</a></li>  
+         
+        </ul>
+
+    </div>
+<!--    
+    <div id="service" class="main-2" style="font-size: 30px;">
+
+  
+   </div> -->
+   <div id="mybooks">  
+     <div  class="option" style="text-align: center; font-size: 25px;">
+      <h1 class="font-effect-emboss" style="color: red;"> WEL-COME TO OUR PROGRAM </h1> 
+      <P> CHOOSE BETTER OPTION FOR BEST CARRIER </P>
+     </div>
+     <div class="courses"><h1 style="text-align: center;">FOLLOW COURSES</h1div>
+     <div class="courses-book">
+
+      <div class="item item-1">1 </div>
+      <div class="item item-2">2 </div>
+      <div class="item item-3">3 </div>
+      <div class="item item-4">4 </div>
+      <div class="item item-5">5 </div>
+      <div class="item item-6">6 </div>
+
+    </div>
+  </div>  
+    <h1 class="habout" style="color: black;">See what our learners say</h1>
+    <div class="about-cont">
+      <div class="about-item">
+      <h2>Vinay Mishra</h2> 
+      <span>&#11088; &#11088; &#11088; &#11088; &#11088; </span> 
+      <p>This course best fits people who want to kick start their careers in Software Development without having the required preconditioning. 
+        The most wholesome part of this course is the leeway these instructors provide to ask questions. 
+        This gives a peripheral view into different problem-solving methodologies.</p>
+      </div>
+      <div class="about-item">
+        <h2>MAHESH Rathod</h2>
+        <span>&#11088; &#11088; &#11088; &#11088; &#11088; </span> 
+        <p> I loved my journey through the Full Stack Development bootcamp. The curriculum and projects helped me get placed at Wipro.
+           I am currently working as a data engineer and am using all the programming concepts I learnt during the course.</p>
+      </div>
+      <div class="about-item"> 
+        <h2>SANKET Thakare</h2>
+        <span>&#11088; &#11088; &#11088; &#11088; &#11088; </span> 
+        <p>It was a really good experience to do the Full Stack Development course from upGrad. 
+          I have really upskilled my knowledge and got an opportunity to work for one of the esteem companies. 
+          Thank you, upGrad, for really motivating me and guiding me to choose the correct career path.</p>
+      </div>
+
+    </div>
+ 
+    <!-- footr page  -->
+
+       <div class="item item-21"> 
+       <div class="contain-1 footer">   
+       <div class="logo"></div>
+       <div class="c-1">
+         <h3>About Us</h3>
+         <p>We Want to help bring talanted students <br> and unique startups togethers.</p>
+ 
+       </div>
+       <div class="c-1">
+         <h3>Contact-Us</h3>
+         <h4>8552938730</h4>
+         <h4>lanjewarvaibhav56@gmail.com</h4>
+       </div>
+     </div>
+
+        <!-- container two  -->
+ 
+     <div class="contain-2 footer">
+         <div class="c-2"><b> Information </b></div>
+         <div class="c-2">About-Us</div>
+         <div class="c-2"> More Search</div>
+         <div class="c-2">Blog</div>
+         <div class="c-2">Testimonials</div>
+         <div class="c-2">Events</div>
+     </div>
+ 
+      <!-- container three  -->
+ 
+      <div class="contain-2 footer">
+         <div class="c-2"><b> Helpful links </b></div>
+         <div class="c-2">Service</div>
+         <div class="c-2"> Supports</div>
+         <div class="c-2">Term & Condition</div>
+         <div class="c-2">Privacy</div>
+         <div class="c-2">Policy</div>
+     </div>
+
+      <!-- container four -->
+ 
+      <div class="contain-2 footer">
+         <div class="c-2"><b> Subscribe More Info </b></div>
+         <div class="c-2"><input type="email" placeholder="Enter Email"></div>
+         <div class="c-2"> <button>Subscribe</button></div>
+         <div class="c-2">
+            
+         </div> 
+     </div>
+     </div>
+     <div class="item item-22"> </div>
+     <div class="item item-23"> </div>
+    
+     </div>
+    <!-- body contener end  -->
+  </div> 
+  <!-- ajax database-  -->
+
+
+    <script>
+            // homes file
+     function home(){
+        const xhttp = new XMLHttpRequest();
+        xhttp.onload= function(){
+             document.getElementById('first').innerHTML=this.responseText;
+        }
+        xhttp.open("GET","index.html","true");
+        xhttp.send();
+    }
+      // about file
+     function about(){
+        const xhttp = new XMLHttpRequest();
+        xhttp.onload= function(){
+             document.getElementById('mybooks').innerHTML=this.responseText;
+        }
+        xhttp.open("GET","about_hr.html","true");
+        xhttp.send();
+    }
+
+    //servic files
+    function servic(){
+        const xhttp = new XMLHttpRequest();
+        xhttp.onload= function(){
+             document.getElementById('mybooks').innerHTML=this.responseText;
+        }
+        xhttp.open("GET","sevises_hr.html","true");
+        xhttp.send();
+       
+    }
+     //contact us files
+     function contact(){
+        const xhttp = new XMLHttpRequest();
+        xhttp.onload= function(){
+             document.getElementById('mybooks').innerHTML=this.responseText;
+        }
+        xhttp.open("GET","hr_contact.html","true");
+        xhttp.send();
+       
+    }
+     //backs buttons
+    function back(){
+        const xhttp = new XMLHttpRequest();
+        xhttp.onload= function(){
+          // document.getElementById('mybooks').innerHTML='';
+             
+        }
+        xhttp.open("GET","hr_nav.html","true");
+        xhttp.send();
+       
+    }
+    </script>
+  <!-- ajax database-  -->
+</body>
+</html>
